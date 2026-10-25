@@ -3,7 +3,7 @@ const Class = require('../models/Class');
 // @desc  Get all classes (used by the Student form's Class dropdown)
 // @route GET /api/classes
 const getClasses = async (req, res, next) => {
-  try \
+  try {
     const classes = await Class.find().sort({ name: 1 });
     res.status(200).json({ success: true, count: classes.length, data: classes });
   } catch (error) {

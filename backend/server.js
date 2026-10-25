@@ -18,7 +18,6 @@ const reportRoutes = require('./src/routes/reportRoutes');
 const facultyRoutes = require('./src/routes/facultyRoutes');
 const classRoutes = require('./src/routes/classRoutes');
 const qrRoutes = require('./src/routes/qrRoutes');
-g
 connectDB();
 
 const app = express();
